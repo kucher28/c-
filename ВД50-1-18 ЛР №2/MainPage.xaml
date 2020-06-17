@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="ВД50_1_18_ЛР__2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ВД50_1_18_ЛР__2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <NavigationView x:Name="NavView" IsSettingsVisible="False" IsBackButtonVisible="Collapsed">
+        <NavigationView.MenuItems>
+            <NavigationViewItem x:Name="Home" Content="Home" Icon="Home" Tapped="Home_Tapped"/>
+            <NavigationViewItem x:Name="Settings" Content="Settings" Icon="Setting" Tapped="Settings_Tapped"/>
+            <NavigationViewItem x:Name="Telephone" Content="Telephone" Icon="Phone" Tapped="Telephone_Tapped"/>
+            <NavigationViewItem x:Name="Clock" Content="Clock" Icon="Clock" Tapped="Clock_Tapped"/>
+            <NavigationViewItem x:Name="Play" Content="Play" Icon="Play" Tapped="Play_Tapped"/>
+        </NavigationView.MenuItems>
+        <Frame x:Name="ContentFrame"/>
+    </NavigationView>
+</Page>
